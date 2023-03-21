@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    URL ABSOLUE : URL EN ENTIER AVEC
+    "HTTPS://"(protocole) + www(sous domaine) + google (domaine) + .fr (extension) + urlpage
+    -->
+    <a href="https://www.google.fr/" title="Google">Lien vers google</a>
+
+    <!--ABSOLU EXTERNE-->
+    <img width="100" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.pixel-online.fr/wp-content/uploads/2022/12/logo-pixel-500x81-copie.webp" alt="">
+    <!--ABSOLU INTERNE (/) par rapport à la racine de notre projet ici cours2023-->
+    <img width="60" src="/1-HTML/image/validation.gif" alt="">    
+
+    <!--RELATIF (pas rapport au fichier 4-liens...)-->
+    <img width="60" src="image/validation.gif" alt="">   
+    <!--RELATIF (pas rapport au fichier 4-liens...) meme chose-->
+    <img width="60" src="./image/validation.gif" alt="">   
+
+    <a href="./3-listes-tableaux.html">page tableaux</a>
+    <a href="./exercice/exo-table.html">exercice table</a>
+    <!--../ fait reference au dossier parent ensuite je navigue dans0-git et je vais chercher le fichier-->
+    <a href="../0-GIT/git.pdf" target="_blank">fichier git</a>
+    <a href="/0-GIT/git.pdf" target="_blank">fichier git</a>
+</body>
+</html>
