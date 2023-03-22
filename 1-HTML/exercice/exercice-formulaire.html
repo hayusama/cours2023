@@ -19,9 +19,42 @@
 			- son adresse email (obligatoire)
 			- son age (pas obligatoire - entre 25 et 50)
 			- une description avec minimum 50 caractères
-			- un champ pour uploader une photo au format .jpg
+			- un champ pour uploader une photo au format .jpg .jpeg
 
 			Créer le formulaire, les champs et les validations demandées
 		</p>
+
+
+		<form action="" method="get" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Exercice formulaire</legend>
+				<p>
+					<input type="radio" name="gender" value="1">Mr
+            		<input type="radio" name="gender" value="2">Mme
+				</p>
+				<p>
+					<label for="nom">Votre nom :</label>
+					<input type="text" name="nom" id="nom" required>
+				</p>
+				<p>
+					<label for="mail">Votre mail :</label>
+					<input type="email" name="mail" id="mail" required>
+				</p>
+				<p>
+					<label for="age">Votre age :</label>
+					<input type="number" name="age" id="age" min="25" max="50" value="25">
+				</p>
+				<p>
+					<textarea name="description" placeholder="Votre description" id="" cols="30" rows="10" minlength="50"></textarea>
+				</p>
+				<p>
+					<input type="file" name="picture" accept="image/jpeg" id="">
+				</p>
+				<p>
+					<input type="submit" value="Inscription">
+				</p>
+
+			</fieldset>
+		</form>
 	</body>
 </html>
