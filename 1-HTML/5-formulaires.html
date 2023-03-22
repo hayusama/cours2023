@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Les formulaires</h1>
-    <form method="get" action="">
+    <!--UNIQUEMENT QUAND ON UTILISE DES FICHIERS enctype="multipart/form-data"-->
+    <form method="get" action="" enctype="multipart/form-data">
         <fieldset>
             <legend>Vos informations personnelles</legend>
             <p>
@@ -37,6 +38,34 @@
             Mais pas sous forme de tableaux car on ne peut recuperer qu'une valeur de l'ensemble-->
             <input type="radio" name="situation" value="Propriétaire" checked>Propriétaire<br>
             <input type="radio" name="situation" value="Locataire">locataire<br>
+
+            <div>
+                <label for="lieu_naissance">lieu de naissance :</label>
+                <select name="lieu_naissance" id="lieu_naissance" required>
+                    <option value="" selected>--Choisissez votre lieu de naissance--</option>
+                    <option value="France">France</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Slovaquie">Slovaquie</option>
+                </select>
+            </div><br>
+
+
+            <div>
+                <label for="lieu_vacances">Lieu de vacances :</label>
+                <select name="lieu_vacances[]" id="lieu_vacances" required multiple>
+                    <option value="" selected>--Choisissez votre lieu de naissance--</option>
+                    <option value="France">France</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Slovaquie">Slovaquie</option>
+                </select>
+            </div><br>
+
+            <textarea name="information" id="" cols="70" rows="5" placeholder="Texte par defaut"></textarea>
+            <br><br>
+
+            <input type="file" name="fichier" accept="image/*">
 
             <input type="submit" value="Envoyer">
         </fieldset>
