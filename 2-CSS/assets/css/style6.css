@@ -1,0 +1,11 @@
+#conteneur{
+    display:flex;
+}
+
+.element{
+    width:150px;
+}
+
+.rouge{background: red;}
+.vert{background: green;}
+.bleu{background: blue;}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+@font-face {
+    font-family: 'M2IDEV';
+    src: url("/2-CSS/assets/font/Always_Smile.otf");
+}
+
+h1{
+    color: rgb(19, 118, 185);
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "Quicksand","M2IDEV",'Trebuchet MS', Arial, sans-serif;
+}
+
+p,span{
+    font-weight: 700;
+    font-style:italic;
+    text-decoration: line-through;
+    border:1px solid black;
+    text-align:right;
+}
+
+span{
+    /* display:inline; ne prend que la taille du contenu et on ne pas modifier sa taille sa disposition et ses marges*/
+    /* display:block; par defaut 100% de l'ecran et on peut modifier sa taille*/
+    display:inline-block; /*mix entre les deux taille par defaut du contenant mais possibilité de la transformer en un bloc ou du moins meme comportement*/
+    /*display:none;cacher un element*/
+}
+
+p#info1{
+    width:20%;
+    height:100px;
+    background: red;
+    color:white;
+    margin:25px;
+    padding:25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+p#info2{
+    width:20%;
+    height:100px;
+    background: green;
+    color:white;
+}
+
+img{
+    width:100px;
+}
+
+
+
+div#slide{
+    height:200px;
+    background-color:#cccccc;
+    background-image: url('https://www.pubavenue.com/Assets/template-img/Gamme/Index/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+div#slide > span{
+    text-decoration: none;
+    border:none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
