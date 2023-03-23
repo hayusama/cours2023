@@ -30,7 +30,41 @@ hr{
     border:3px solid green;
 }
 
-div>p>span{
+div p span{
     color:yellowgreen;
+    font-size:18px;
+}
+
+h1+span,h1+span+span{
+    font-size:10px;
+}
+
+input[type="text"]{
+    border:10px solid black;
+}
+
+input[type="submit"]{
+    cursor:pointer;
+    background:red;
+    color:white;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+div#entete p{
     font-size:25px;
+}
+
+#entete p {
+    font-size:40px;
+}
+
+/* SELECTIONNE  les elements html avec la class bleu dans un div avec l'id entete*/
+div#entete .bleu{
+
+}
+
+/* SELECTIONNE  le div possedant l'id entete avec la class bleu*/
+div#entete.bleu{
+
 }
