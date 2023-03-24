@@ -1,0 +1,1 @@
+.row{display:flex}#logo{width:20%}#search{width:50%}#social{width:30%}.rouge{background:red}.vert{background:green}.bleu{background:#00f}@media screen and (max-width:400px){.row{flex-direction:column}div#conteneur div{width:100%}div#social{display:none}div#logo{font-weight:700;background-color:grey}}

@@ -1,5 +1,25 @@
-#conteneur{
+.row{
     display:flex;
+    border:1px solid black;
+}
+#conteneur{
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#conteneur2{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+#conteneur3{
+    height:500px;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .element{
