@@ -1,0 +1,16 @@
+Algorithme multiplication
+{Permet de réaliser une multiplication}
+
+variables nombre1,nombre2,resultat:entiers
+
+debut
+	afficher("Programme multiplication : Saisir 1er nombre :")
+	saisir(nombre1)
+
+	afficher('Saisir 2eme nombre :')
+	saisir(nombre2)
+
+	resultat <- nombre1 * nombre2
+
+	afficher("Le resultat est : ",resultat)
+fin

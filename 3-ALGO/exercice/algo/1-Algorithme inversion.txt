@@ -1,0 +1,14 @@
+Algorithme inversion
+{XXXXXX}
+
+variables valA, valB, valTemp:réels
+
+Debut
+	Afficher("Donnez-moi deux valeurs :")
+	Saisir(valA, valB)   {valA = 15, valB = 10}
+	Afficher("vous m'avez donné",valA, " et ",valB)
+	valTemp <- valA   {valTemp = 15, valA = 15, valB = 10}
+	valA <- valB {valTemp = 15, valA = 10, valB = 10}
+	valB <- valTemp {valTemp = 15, valA = 10, valB = 15}
+Fin
+{valA = 10, valB = 15}

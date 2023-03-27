@@ -1,0 +1,19 @@
+Algorithme tableau multiplication
+{Demander à l'utilisateur un chiffre et afficher la table de multiplication}
+
+variable valeur:entier
+
+debut
+	afficher("Saisir une valeur : ")
+	saisir(valeur)
+	afficher(valeur," * 1 = ",valeur*1)
+	afficher(valeur," * 2 = ",valeur*2)
+	afficher(valeur," * 3 = ",valeur*3)
+	afficher(valeur," * 4 = ",valeur*4)
+	afficher(valeur," * 5 = ",valeur*5)
+	afficher(valeur," * 6 = ",valeur*6)
+	afficher(valeur," * 7 = ",valeur*7)
+	afficher(valeur," * 8 = ",valeur*8)
+	afficher(valeur," * 9 = ",valeur*9)
+	afficher(valeur," * 10 = ",valeur*10)
+fin

@@ -1,0 +1,21 @@
+Algorithme EleveAuCarre
+{COMMENTAIRE : Cet algorithme calcule le carré du nombre que lui fournit l'utilisateur}
+
+variables unNombre, sonCarre: entiers
+
+Début
+	afficher("Quel nombre voulez-vous élever au carré?")
+	saisir(unNombre)   {COMMENTAIRE : SI JE TAPE 6 , unNombre = 6}
+	sonCarre <- unNombre * unNombre
+
+	afficher("Le carré de ",unNombre," est : ",sonCarre)
+	{concatenation}
+fin
+
+{ALGO}
+afficher("Le carré de ",unNombre," est : ",sonCarre)
+{ECRITURE PHP}
+echo "Le carré de".$unNombre." est : ".$sonCarre;
+{ECRITURE JAVASCRIPT}
+alert("Le carré de " + unNombre + " est : " + sonCarre)
+alert(`Le carré de ${unNombre} est ${sonCarre}`) {alt gr + 7}
