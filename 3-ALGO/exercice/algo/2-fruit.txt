@@ -1,0 +1,29 @@
+-kiwi ->vert
+-fraise ->rouge
+-banane -> jaune
+-pomme -> vert
+-orange->orange
+-a
+
+kiwi -> vert
+orange -> fruit non reconnu
+
+Algorithme Fruit
+{renvoi la couleur du fruit}
+
+variable fruit:caractères
+
+debut
+	Afficher("Choisir votre fruit dans la liste suivante : kiwi, fraise, banane")
+	saisir(fruit)
+	si (fruit == "kiwi")
+		alors	afficher("Le fruit est vert")
+		sinon si (fruit == "fraise")
+			alors afficher("Le fruit est rouge")
+			sinon si (fruit == "banane")
+				alors afficher("Le fruit est jaune")
+				sinon afficher("Fruit non reconnu")
+				  fsi
+			fsi
+	fsi	
+fin

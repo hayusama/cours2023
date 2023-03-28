@@ -1,0 +1,86 @@
+Avec le selon :
+saisir un note
+Si la personne a entre 0/4 -> insuffisant
+si la personne a entre 5/6 -> suffisant
+si la personne a entre 7/9 -> tres bien
+Si la personne a 10 -> parfait
+Dans tout les autres cas ecrire note invalide.
+
+
+Algorithme Note
+{Test de selon}
+
+variable note:entier
+
+Debut
+	Afficher("Indiquez votre note")
+	Saisir(note)
+	selon note :
+		0 : 
+		1 : 
+		2 : 
+		3 : 
+		4 : afficher("insuffisant")
+			break
+		5 :
+		6 : afficher("suffisant")
+			break
+		7 : 
+		8 :
+		9 : afficher("très bien")
+			break
+		10 : afficher("parfait")
+			 break
+		autres : afficher("note invalide") 
+	fselon
+fin
+
+
+HACK PHP
+Algorithme Note
+{Test de selon}
+
+variable note:entier
+
+Debut
+	Afficher("Indiquez votre note")
+	Saisir(note)
+	selon vrai
+		note >=0 et note <= 4 : Afficher("insuffisant")
+								break
+		note >=5 et note <= 6 : Afficher("suffisant")
+								break 
+		note >=7 et note <= 9 : Afficher("Tres bien")
+								break
+		note == 10 : Afficher("Parfait")
+					 break
+		autres : Afficher("note invalide")
+	fselon
+fin
+
+
+<?php
+
+$note = 10;
+
+
+switch(true) {
+	case ($note >=0 and $note <=4) :
+		echo "Insuffisant";
+		break;
+	case ($note >=5 and $note <=6) :
+		echo "suffisant";
+		break;
+	case ($note >=7 and $note <=9) :
+		echo "Très bien";
+		break;
+	case ($note == 10) :
+		echo "Parfait";
+		break;
+	default :
+		echo "non reconnu";
+}
+
+echo "FIN DU PROGRAMME";
+
+?>

@@ -1,0 +1,16 @@
+Algorithme division
+{DIVISION}
+	
+variables numerateur,denominateur,quotient : réels
+
+debut
+	afficher("saisir numérateur :")
+	saisir(numerateur)
+	afficher("saisir dénominateur :")
+	saisir(denominateur)
+	si (denominateur = 0)
+		alors	afficher("division impossible par 0")
+		sinon	quotient <- numerateur / denominateur
+				afficher ("Résultat : ",quotient)
+fin
+?>

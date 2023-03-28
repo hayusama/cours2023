@@ -1,0 +1,66 @@
+
+
+	
+-kiwi ->vert
+-fraise ->rouge
+-banane -> jaune
+-pomme -> vert
+-orange->orange
+-autre : non reconnu
+
+
+algorithme choix_fruit_selon
+{utilisation du selon}
+
+variable fruit : caractères
+
+debut
+	Afficher("Choisir votre fruit dans la liste suivante : kiwi, fraise, banane")
+	saisir(fruit)
+
+	selon fruit :
+		"kiwi" : 	
+		"pomme" : 	afficher("vert")
+					break
+		"fraise" : 	afficher("rouge")
+				   	break
+		"banane" : 	afficher("jaune")
+					break
+
+		"orange" : 	afficher("orange")
+					break
+		autres: 	afficher("fruit non reconnu")
+	fselon
+	afficher("Fin du programme")
+fin
+
+
+
+<?php
+
+$fruit = "kiwi";
+
+
+switch($fruit) {
+	case "kiwi" : 
+	case "pomme":
+		echo "vert";
+		break;
+	case "fraise" :
+		echo "fruit rouge";
+		break;
+	case "banane":
+		echo "jaune";
+		break;
+
+		break;
+	case "orange":
+		echo "orange";
+		break;
+	default :
+		echo "non reconnu";
+}
+
+echo "FIN DU PROGRAMME";
+
+?>

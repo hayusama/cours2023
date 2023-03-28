@@ -1,0 +1,35 @@
+Algorithme majeur
+{Verifie si majeur}
+
+Constante MAJEUR : entier <- 18
+Variables age, difference :entier
+
+debut
+	Afficher("Saisir votre age")
+	saisir(age)
+	si (age >= MAJEUR)   {>= .... Supérieur ou égale à ...}
+		alors afficher ("Vous êtes majeur")
+		sinon afficher ("Vous êtes mineur")
+			  difference <- MAJEUR - age
+			  afficher ("Dans ",difference," an(s) vous serez majeur!")
+	fsi
+fin
+
+EXEMPLE PHP
+<?php
+
+define('MAJEUR',18);
+$age=20;
+$difference;
+
+echo 'SAISIR AGE (jouer avec variable $age)   ';
+echo $age;
+if($age >= MAJEUR){
+	echo "Vous êtes majeur";
+}else{
+	$difference = ;
+	echo "Dans ".MAJEUR - $age." an(s) vous serez majeur!";
+}
+
+
+?>

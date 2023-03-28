@@ -1,0 +1,13 @@
+x <- 5
+y <- 6
+//OPERATEUR 
+si (x == 5 et y==6)
+	alors afficher("reussite")
+	sinon afficher("echec")
+fsi
+
+
+si (x == 5 ou y==5)
+	alors afficher("reussite")
+	sinon afficher("echec")
+fsi
