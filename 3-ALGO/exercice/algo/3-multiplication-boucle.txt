@@ -1,0 +1,13 @@
+Algorithme tableau multiplication
+{Demander à l'utilisateur un chiffre et afficher la table de multiplication}
+
+const MAX:entier<-100
+variable valeur,cpt:entier
+
+debut
+	afficher("Saisir une valeur : ")
+	saisir(valeur)
+	pour cpt<-1 à MAX faire
+		afficher(valeur," * ",cpt," = ",valeur*cpt)
+	fpour
+fin

@@ -1,0 +1,24 @@
+Reprendre l'exercice avec majeur mineur mais cette fois si demander l'age à 5 personnes
+personne 1 : 15 -> mineur
+personne 2 : 18 -> majeur...
+
+Algorithme majeur
+{Verifie si majeur}
+
+Constante MAJEUR : entier <- 18
+constante MAX : entier <- 5
+Variables age, difference, cpt :entier
+
+debut
+
+	pour cpt<-1 à MAX
+		Afficher("Saisir votre age")
+		saisir(age)
+		si (age >= MAJEUR)   {>= .... Supérieur ou égale à ...}
+			alors afficher ("Vous êtes majeur")
+			sinon afficher ("Vous êtes mineur")
+				  difference <- MAJEUR - age
+				  afficher ("Dans ",difference," an(s) vous serez majeur!")
+		fsi
+	fpour
+fin

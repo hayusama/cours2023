@@ -1,0 +1,27 @@
+Algorithme FaitleTotal
+{Algo total avec boucle pour}
+
+Variables nbVal,cpt : entiers
+		  valeur, totalValeurs: Réels
+
+
+début
+	afficher("Combien de factures avez vous?")
+	saisir(nbVal)
+	totalValeurs <- 0
+
+	pour cpt <-1 à nbVal faire
+		afficher("Donnez une valeur :")
+		saisir(valeur)
+		totalValeurs <- totalValeurs + valeur {CUMUL .. SOMME}
+	fpour
+
+	afficher("Le total des ", nbVal," facture(s) est de :",TotalValeurs,"€")
+fin
+
+
+Combien de.....
+3
+Donnez une valeur : 1000  // totalValeurs = 1000
+Donnez une valeur : 1000 // TotalValeurs = 2000
+Donnez une valeur : 5000 // TotalValeurs = 7000
