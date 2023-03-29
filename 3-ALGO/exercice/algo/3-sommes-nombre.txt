@@ -1,0 +1,25 @@
+Ecrire un algorithme qui demande un nombre de départ, et qui calcule la somme des entiers jusqu’à ce nombre. Par exemple, si l’on entre 5, le programme doit calculer : 1 + 2 + 3 + 4 + 5 = 15 NB : on souhaite afficher uniquement le résultat, pas la décomposition du calcul.
+
+algorithme somme à partir d'un entier donne
+{XXXX}
+
+variables nb,somme,cpt:entier
+
+debut
+	afficher('Saisir votre nombre')
+	saisir(nb)
+	somme<-0
+	pour cpt<-1 à nb
+		somme <- somme + cpt
+	fpour
+	afficher(somme)
+fin
+
+
+somme = 0 + 1; somme=1;
+somme = 1 + 2; somme=3;
+somme = 3 + 3; somme=6;
+somme = 6 + 4; somme=10;
+somme =10 + 5; somme=15;
+
+somme = 15

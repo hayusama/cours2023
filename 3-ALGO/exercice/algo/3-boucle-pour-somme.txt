@@ -1,27 +1,21 @@
-Algorithme FaitleTotal
-{Algo total avec boucle pour}
 
-Variables nbVal,cpt : entiers
-		  valeur, totalValeurs: Réels
+Transformer cet algo avec une boucle 
+Et ajouter la possibilité de voir la table de 1 à 100
 
+Algorithme tableau multiplication
+{Demander à l'utilisateur un chiffre et afficher la table de multiplication}
 
-début
-	afficher("Combien de factures avez vous?")
-	saisir(nbVal)
-	totalValeurs <- 0
+variable valeur:entier
 
-	pour cpt <-1 à nbVal faire
-		afficher("Donnez une valeur :")
-		saisir(valeur)
-		totalValeurs <- totalValeurs + valeur {CUMUL .. SOMME}
-	fpour
+debut
+	afficher("Saisir une valeur : ")
+	saisir(valeur)
+	afficher(valeur," * 1 = ",valeur*1)
+	afficher(valeur," * 2 = ",valeur*2)
+	afficher(valeur," * 3 = ",valeur*3)
+	afficher(valeur," * 4 = ",valeur*4)
+	afficher(valeur," * 5 = ",valeur*5)
 
-	afficher("Le total des ", nbVal," facture(s) est de :",TotalValeurs,"€")
 fin
 
 
-Combien de.....
-3
-Donnez une valeur : 1000  // totalValeurs = 1000
-Donnez une valeur : 1000 // TotalValeurs = 2000
-Donnez une valeur : 5000 // TotalValeurs = 7000

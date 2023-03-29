@@ -1,0 +1,27 @@
+Ecrire un algo qui demande à la suite 10 nombres à l’utilisateur et qui lui dit ensuite quel était le plus grand et le plus petit de ces nombres.
+Pour, tant que, si
+
+Algorithme Detection
+{detection avec boucle}
+
+constante MAX:entier<-10
+
+variables
+	cpt:entier
+	valeur,minValeur,maxValeur : réels
+
+debut
+	pour cpt<-1 à MAX faire
+		afficher("Entrer votre valeur ",cpt)
+		saisir(valeur)
+		si (cpt == 1 OU valeur<minValeur)
+			alors minValeur<-valeur
+		fsi
+		
+		si(cpt==1 OU valeur>maxValeur)
+			alors maxValeur<-valeur
+		fsi	
+	fpour
+	afficher("Votre valeur minimale est : ",minValeur);
+	afficher("Votre valeur maximale est : ",maxValeur);
+fin

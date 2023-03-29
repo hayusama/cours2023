@@ -27,8 +27,8 @@ echo $age;
 if($age >= MAJEUR){
 	echo "Vous êtes majeur";
 }else{
-	$difference = ;
-	echo "Dans ".MAJEUR - $age." an(s) vous serez majeur!";
+	$difference = MAJEUR - $age;
+	echo "Dans ".$difference." an(s) vous serez majeur!";
 }
 
 

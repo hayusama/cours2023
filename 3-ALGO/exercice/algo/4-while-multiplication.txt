@@ -1,0 +1,27 @@
+Algorithme tableau multiplication
+{Demander à l'utilisateur un chiffre et afficher la table de multiplication}
+
+const MAX:entier<-100
+variable valeur,cpt:entier
+
+debut
+	afficher("Saisir une valeur : ")
+	saisir(valeur)
+	cpt<-1
+	tant que cpt<=MAX faire
+		afficher(valeur," * ",cpt," = ",valeur*cpt)
+		cpt <- cpt + 1
+	ftp
+fin
+
+
+<?php
+define("MAX",10);
+
+echo "SASIR UNE VALEUR {5}\n\r";
+$valeur = 5;
+$cpt=1;
+while($cpt<=MAX){
+	echo $valeur." * ".$cpt." = ".$valeur*$cpt."\n\r";
+	$cpt = $cpt+1;
+}
