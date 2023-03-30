@@ -1,0 +1,47 @@
+Demander à l’utilisateur deux nombres compris entre 5 et 50, 
+et afficher le résultat de la multiplication. 
+Il faut absolument que les nombres soient compris entre 5 et 50.
+
+
+entrez votre 1er nombre :
+4
+n'est pas valide resaisir nombre:
+4
+n'est pas valide resaisir nombre:
+5
+
+entrez votre 2eme nombre :
+10
+10*5 = 50
+
+
+Algorithme multiplication_contrainte
+{VALEUR ENTRE 5 ET 50}
+
+constante MIN:entier<-5
+          MAX:entier<-50
+
+variables nombre1,nombre2,result : réels
+
+
+debut
+    afficher("SAISIR NOMBRE 1")
+    saisir(nombre1)
+    tant que (nombre1<MIN ou nombre1>MAX)
+        afficher(nombre1," n'est pas compris entre ",MIN," et ",MAX)
+        saisir(nombre1)
+    ftq
+
+    saisir(nombre2)
+    tant que (nombre2<MIN ou nombre2>MAX)
+        afficher(nombre2," n'est pas compris entre ",MIN," et ",MAX)
+        saisir(nombre2)
+    ftq
+
+    result <- nombre1 * nombre2
+    afficher("Le résultat est :",result)
+fin
+
+
+
+
