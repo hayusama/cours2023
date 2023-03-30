@@ -1,0 +1,36 @@
+Demander à l’utilisateur de saisir des notes d’etudiants pour calculer une moyenne l’arret de la saisie des notes se fait par « -1 » (penser à verifier que la note est bien entre 0 et 20)
+Algorithme calculer_moyenne
+{permet de calculer la moyenne des notes d’etudiant}
+
+Algorithme moyenne
+{permet de calculer la moyenne de notes}
+
+constantes
+	STOP : entier <- -1
+	MIN : entier <- 0
+	MAX : entier <- 20
+
+
+variables note,moyenne,somme,cpt:réel
+
+
+debut
+	somme <- 0
+	cpt <- 0
+	repeter
+		afficher("Saisir une note entre ",MIN," et ",MAX, " et arreter la saisie avec ",STOP)
+		saisir(note)
+		si(note >= MIN et note <= MAX) alors
+			somme <- somme + note
+			cpt <- cpt + 1
+		fsi
+	tant que (note != STOP)
+	
+	si(cpt == 0) alors 
+			afficher("La moyenne ne peut pas être calculée")
+		sinon
+			moyenne <- somme / cpt;
+			afficher("La moyenne est de : ",moyenne)
+	fsi
+	
+fin

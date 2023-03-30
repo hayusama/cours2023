@@ -32,6 +32,7 @@ debut
         saisir(nombre1)
     ftq
 
+    afficher("SAISIR NOMBRE 2")
     saisir(nombre2)
     tant que (nombre2<MIN ou nombre2>MAX)
         afficher(nombre2," n'est pas compris entre ",MIN," et ",MAX)
@@ -42,6 +43,35 @@ debut
     afficher("Le résultat est :",result)
 fin
 
+
+
+
+
+
+
+Algorithme multiplication_contrainte
+{VALEUR ENTRE 5 ET 50}
+
+constante MIN:entier<-5
+          MAX:entier<-50
+
+variables nombre1,nombre2,result : réels
+
+
+debut
+    repeter
+        afficher("Saisir valeur comprise entre ",MIN," et ",MAX)
+        saisir(nombre1)
+    tant que (nombre1<MIN ou nombre1>MAX)
+
+    repeter
+        afficher(Saisir valeur comprise entre  ",MIN," et ",MAX)
+        saisir(nombre2)
+    tant que (nombre2<MIN ou nombre2>MAX)
+
+    result <- nombre1 * nombre2
+    afficher("Le résultat est :",result)
+fin
 
 
 
