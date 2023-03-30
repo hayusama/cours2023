@@ -1,0 +1,3 @@
+Demander à l’utilisateur de saisir un nombre de notes indéterminé (-1 pour stop), en stockant ces notes dans un tableau.
+Afficher ensuite la note la plus haute.
+Faire deux boucles : une pour remplir le tableau, une autre pour trouver la note la plus haute.

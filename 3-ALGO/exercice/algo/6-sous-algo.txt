@@ -1,0 +1,32 @@
+algorithme principal
+{XXXX}
+variables info:caracteres
+		  nb1,nb2,nb3,resultat1,resultat2,resultat3:reels
+debut
+	afficher("Tester ma calculatrice")
+	saisir(nb1)
+	saisir(nb2)  {nb1=5,nb2=6}
+	resultat1 <- addition(nb1,nb2)
+	afficher(resultat1)
+
+	saisir(nb3) {nb3=10}
+	resultat2 <- addition(nb2,nb3)
+
+	resultat3 <- addition(resultat1,resultat2)
+fin
+
+
+
+
+fonction addition (nombre1:reels,nombre2:reels) : reel
+variables result : reels
+
+debut
+	result <- nombre1+nombre2;
+	retourner result;
+fin
+
+
+
+
+
