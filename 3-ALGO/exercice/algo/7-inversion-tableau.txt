@@ -1,0 +1,30 @@
+Créer une fonction qui prend en paramètre un tableau, et qui 
+retourne un nouveau tableau dont tous les éléments du premier ont été inversés. [1,3,2] => [2,3,1]
+
+
+algorithme inversion_tableau
+{XXXXX}
+
+tableau tab1,tab2
+variable i:entier
+
+fonction inversion(tab:tableau):tableau
+    tableau : newTab
+    variable cpt<-0
+
+    debut
+        pour cpt<-0 à taille(tab)-1 faire
+            newTab(cpt) <- tab(taille(tab)-1-cpt)
+        fpour
+        retourner newTab
+    fin
+
+
+debut
+    tab1 <- [1,2,3,4,5]
+    tab2 <- inversion(tab1)
+
+    pour i<-0 à taille(tab2)-1 faire
+        afficher(tab2(i))
+    fpour
+fin

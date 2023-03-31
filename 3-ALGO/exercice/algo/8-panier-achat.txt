@@ -1,0 +1,102 @@
+algorithme E-commerce
+
+structure Utilisateur{
+    identifiant : entier
+    nom : caracteres
+    prenom : caracteres
+    age:entier
+    mail : caracteres
+    motdepasse : caracteres
+    adresse : caracteres
+    tel:caracteres
+    statut : booleen
+}
+
+structure Produits{
+    identifiant : entier
+    designation : caracteres
+    prix:reels
+    stock:entier
+    description : caracteres
+    categorie : Categories
+    statut : booleen
+}
+
+structure Categories{
+    identifiant : entier
+    nom:caracteres
+    description : caracteres
+    statut : booleen
+}
+
+structure panier{
+    user: Utilisateur
+    listeProduits : tableau
+}
+
+
+variables :
+    user1,user2 : Utilisateur
+    cat : Categories
+    p1,p2,p3 : Produits
+    cart1,cart2:Panier
+    tableau : productAdd
+    i:entier
+
+debut
+    user1.identifiant <- 1
+    user1.nom <- "dupond"
+    user1.prenom <- "Jean"
+    user1.adresse <- "4, rue du test"
+
+    user2.identifiant <- 2
+    user2.nom <- "Doe"
+    user2.prenom <- "John"
+    user2.adresse <- "5 rue du paradis"
+
+
+    afficher("bonjour ",user1.nom," ",user1.prenom)
+
+    =========================================
+    cat.identifiant <- 1
+    cat.nom <- "Velo"
+    cat.description <- "Vélo qui roule"
+    =========================================
+    p1.identifiant<-1
+    p1.nom <- "Velo rouge"
+    p1.categorie <- cat
+    p1.description <-"Super velo rouge"
+    p1.stock <- 50
+    p1.prix <- 399.99
+
+    afficher(p1.cat.nom)
+
+    p2.identifiant<-2
+    p2.nom <- "Velo bleu"
+    p2.categorie <- cat
+    p2.description <-"Super velo bleu"
+    p2.stock <- 40
+    p2.prix <- 299.99
+
+    p3.identifiant<-3
+    p3.nom <- "Velo vert"
+    p3.categorie <- cat
+    p3.description <-"Super velo vert"
+    p3.stock <- 140
+    p3.prix <- 199.99
+===========================================
+    cart1.user <- user1
+    cart2.user <- user2
+
+    cart1.listeProduits(0) <- produitAdd(p2,5)
+    {produitAdd(structure produit, quantite)}
+
+    cart2.listeProduits(0) <- productAdd(p3,3)
+
+    cart1.listeProduits(1) <- produitAdd(p1,3)
+===========================================
+    pour i<-0 à taille(cart1.listeProduits)-1 faire
+        afficher(cart1.listeProduits(i)(0).nom," : ",cart1.listeProduits(i)(1))
+        {velo rouge : 5}
+    fpour
+fin

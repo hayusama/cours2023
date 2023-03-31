@@ -1,0 +1,27 @@
+Créer une fonction qui prend en paramètre un tableau d’entier et qui retourne la valeur la plus petite.
+
+
+algorithme min
+{XXXXXX}
+tableau note,note2
+variable min,min2
+
+fonction getSmall(tab:tableau):entier
+    variable minimum,i:entier
+    debut
+        pour i<-0 à taille(tab)-1 faire
+            si (i==0 ou minimum>tab(i)) alors
+                minimum <- tab(i)
+        fpour
+        retourner minimum
+    fin
+
+debut
+    note <- [1,2,3,4,10] 
+    min <- getSmall(note)
+    afficher("La plus petite valeur est : ",min)
+
+    note2 <- [1,2,3,4,10,5,5,5,5,5,5,5] 
+    min2 <- getSmall(note2)
+    afficher("La plus petite valeur est : ",min2)
+fin
