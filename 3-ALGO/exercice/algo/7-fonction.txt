@@ -1,0 +1,25 @@
+Algorithme essai
+
+variable nb:entier
+         cpt:entier
+         somGlobal:entier
+
+fonction Somme(palier:entier):entier
+    variable som:entier
+             i:entier
+    som <- 0
+    debut
+        pour i<-1 à palier faire
+            som <- som + i
+        fpour
+        retourner som
+    fin
+
+debut
+    pour cpt<-1 à 10 faire
+        afficher("Saisir votre valeur :")
+        saisir(nb)
+        somGlobal = Somme(nb)
+        afficher("Le resultat est : ",somGlobal)
+    fpour
+fin

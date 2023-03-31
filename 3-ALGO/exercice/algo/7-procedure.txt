@@ -1,0 +1,23 @@
+Algorithme essai
+
+variable nb:entier
+         cpt:entier
+
+procedure Somme(palier:entier)
+    variable som:entier
+             i:entier
+    som <- 0
+    debut
+        pour i<-1 à palier faire
+            som <- som + i
+        fpour
+        afficher("Votre resultat est :",som)
+    fin
+
+debut
+    pour cpt<-1 à 10 faire
+        afficher("Saisir votre valeur :")
+        saisir(nb)
+        Somme(nb)
+    fpour
+fin

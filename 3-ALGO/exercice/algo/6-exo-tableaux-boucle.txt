@@ -1,0 +1,39 @@
+Demander à l’utilisateur de saisir un nombre de notes indéterminé (-1 pour stop), en stockant ces notes dans un tableau.
+Afficher ensuite la note la plus haute.
+Faire deux boucles : une pour remplir le tableau, une autre pour trouver la note la plus haute.
+
+algorithme moyenne_tableau
+{XXXXX}
+
+tableau notes():entier
+constante STOP:entier<--1
+          MIN:entier<-0
+          MAX:entier <-20
+variables maxNote,actuelNote,cpt,i:entier
+
+
+debut
+    cpt<-0
+    afficher("Saisir vos notes finir par : ",STOP)
+    saisir(actuelNote)
+    tant que (actuelNote != STOP) faire
+        si(actuelNote>=MIN et actuelNote<=MAX) alors
+            note(cpt) <- actuelNote
+            cpt<-cpt+1
+        fsi
+        afficher("Saisir vos notes finir par : ",STOP)
+        saisir(actuelNote)
+    ftq
+
+    si(cpt==0) alors
+        afficher("Aucune note fournie")
+    sinon
+        pour i<-0 à taille(note)-1 faire
+            si(i==0 ou maxNote<note(i)) alors
+                maxNote <- note(i)
+            fsi
+        fpour
+        afficher("La note la plus haute est : ",maxNote)
+    fsi
+fin
+

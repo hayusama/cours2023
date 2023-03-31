@@ -1,0 +1,54 @@
+Algorithme Calculatrice
+
+variables
+    nb1,nb2,resultat : réels
+    operande : caractere
+
+fonction addition(nombre1:reel,nombre2:reel):reel
+    debut
+        retourner nombre1+nombre2
+    fin
+
+fonction soustraction(nombre1:reel,nombre2:reel):reel
+    debut
+        retourner nombre1-nombre2
+    fin
+
+fonction multiplication(nombre1:reel,nombre2:reel):reel
+    debut
+        retourner nombre1*nombre2
+    fin
+
+procedure division(nombre1:reel,nombre2:reel)
+    debut
+        si(nombre2==0) alors
+            afficher('calcul impossible')
+        sinon
+            afficher('Votre resultat est : ',nombre1/nombre2)
+        fsi
+    fin
+
+debut
+    afficher("Saisir votre premiere valeur :")
+    saisir(nb1)
+    afficher("Saisir votre opérande (+,-,/,*) :")
+    saisir(operande)
+    afficher("Saisir votre deuxieme valeur :")
+    saisir(nb2)
+
+    selon operande :
+        "+" : resultat <- addition(nb1,nb2)
+              afficher("Votre resultat est : ",resultat)
+              break
+        "-" : resultat <- soustraction(nb1,nb2)
+              afficher("Votre resultat est : ",resultat)
+              break
+        "*" : resultat <- multiplication(nb1,nb2)
+              afficher("Votre resultat est : ",resultat)
+              break
+        "/" : division(nb1,nb2)
+              break
+        autres : afficher("INVALIDE")
+    fselon
+
+fin
